@@ -1,0 +1,145 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please put a place Name dndgn\n",
+      "Your place Name is :  DNDGN\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Exercise 1\n",
+    "var_placename = input(\"Please put a place Name \")\n",
+    "var_str = \"Your place Name is : \"\n",
+    "print(var_str, var_placename.upper())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Original String :  iTopiNonAvevanoNipoti\n",
+      "Reversed String :  itopiNonavevAnoNipoTi\n",
+      "Original String :  iTopiNonAvevanoNipoti\n",
+      "Reversed String :  itopiNonavevAnoNipoTi\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Exercise 2\n",
+    "def rev_string(orig_string):\n",
+    "    temp_list = list(orig_string)\n",
+    "    temp_list.reverse()\n",
+    "    rev_string = \"\".join(temp_list)\n",
+    "    return rev_string\n",
+    "orig_string = \"iTopiNonAvevanoNipoti\"\n",
+    "print(\"Original String : \", orig_string)\n",
+    "print(\"Reversed String : \", rev_string(orig_string))\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "38\n",
+      "Corona Virus is also known as Covid-19  and requested length is  19\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Exercise 3\n",
+    "var_str1 = \"Corona\"\n",
+    "var_str2 = \"Virus\"\n",
+    "var_str3 = \"Covid-19\"\n",
+    "var_print = var_str1 + \" \" + var_str2 + \" is also known as \" + var_str3\n",
+    "var_len = len(var_print) - len(var_str1 + var_str2 + var_str3)\n",
+    "#print (len(var_print))\n",
+    "print(var_print, \" and requested length is \", var_len)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Type Something I'll reverse it!kgfljkgbtr\n",
+      "Original String :  kgfljkgbtr\n",
+      "Reversed String :  rtbgkjlfgk\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Exercise 4\n",
+    "#I have learned the Slicing function during all the reverse possibilities and this is so far the fastest option\n",
+    "#original_string = \"what is your name\"\n",
+    "original_string = input (\"Type Something I'll reverse it!\" )\n",
+    "reversed_string = original_string[::-1]\n",
+    "print(\"Original String : \", original_string)\n",
+    "print(\"Reversed String : \", reversed_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Exercise 5\n",
+    "## Following are the steps needed to prepare jupyter notebook with miniconda including installation commands\n",
+    "#Step1. Download the MiniConda from https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html\n",
+    "#Step2. move to the download path by putting CD command and install it commanding bash Miniconda3-latest-Linux-x86_64.sh\n",
+    "#Step3. check the version and if needed update it by commanding conda update conda\n",
+    "#Step4. create your own environment by commanding conda create --name basicprogramming python=3.8\n",
+    "#Step5. activate the environment by putting conda activate basicprogramming\n",
+    "#Step6. open the Jupyter by putting jupyter notebook\n",
+    "#Step7. incase Jupyter does not start then command conda install jupyter\n",
+    "#Step8. If your Browser Started automatically with the localhost then you just need to create a new Python 3 \n",
+    "# file by clicking New and in that opened text Editor you can start coding and compile by clicking Run!\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
